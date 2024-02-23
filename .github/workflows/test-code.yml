@@ -1,0 +1,8 @@
+name: Test code
+on: push
+jobs:
+    test-code-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get Code
+              uses: actions/checkout@v4.1.1 # Uses betyder att vi kör en action, och inte en command. Checkout action laddar ner koden till maskinen som kör worflowet
